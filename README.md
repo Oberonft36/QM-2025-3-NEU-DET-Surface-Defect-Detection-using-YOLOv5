@@ -8,7 +8,7 @@
 ├── data/neu_det_raw/               # 原始 XML 版 NEU-DET 数据
 ├── logs/                           # 数据核验与转换日志
 ├── reports/                        # data_source.md / env_report.md / training_report.md
-├── runs/train/neu_det_from_scratch/# 训练输出（曲线、矩阵、权重等）
+├── runs/train/neu_det_from_scratch/# 训练曲线等
 ├── scripts/                        # 数据核验与 XML→YOLO 转换脚本
 ├── assets/                         # 预测可视化结果
 ├── .gitignore
