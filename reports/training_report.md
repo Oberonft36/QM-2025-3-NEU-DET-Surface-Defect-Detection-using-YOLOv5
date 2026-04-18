@@ -114,7 +114,8 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 1. 正确检测
 
-图像
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/data/neu_det_raw/IMAGES/patches_1.jpg)
+>patches_1
 
 对于 patches 和 scratches 类别，模型能够较准确地检测缺陷区域：
 
