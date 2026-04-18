@@ -44,7 +44,7 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 预测可视化路径：yolo_neu_det_project/assets/predictions/
 
-
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/POW%20images/Summary.png)
 
 ### 一：数据转换流程图
 
@@ -114,8 +114,11 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 1. 正确检测
 
-![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/data/neu_det_raw/IMAGES/patches_1.jpg)
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/patches_1.jpg)
 >patches_1
+
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/scratches_53.jpg)
+>scratches_53
 
 对于 patches 和 scratches 类别，模型能够较准确地检测缺陷区域：
 
@@ -126,7 +129,11 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 2. 定位与置信度
 
-（放 inclusion / pitted_surface 图）
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/inclusion_52.jpg)
+>inclusion_52
+
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/pitted_surface_278.jpg)
+>pitted_seuface_278
 
 对于 inclusion 和 pitted_surface 类别，模型虽然能够检测目标，但存在：
 
@@ -142,7 +149,8 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 3. 误检
 
-（放误检图）
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/pitted_surface_83.jpg)
+>pitted_seuface_83
 
 在 pitted_surface 类别中，存在将正常区域误识别为缺陷的情况。
 
@@ -153,7 +161,8 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 #### 4. 漏检
 
-（放 crazing 图）
+![](https://github.com/Oberonft36/QM-2025-3-NEU-DET-Surface-Defect-Detection-using-YOLOv5/blob/main/assets/predictions_part/crazing_4.jpg)
+>crazing_4
 
 在 crazing 类别中，模型存在明显漏检现象。
 
@@ -161,8 +170,6 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 
 - 缺陷对比度低，特征不明显；
 - 类内差异较大。
-
-
 
 ### 五：预训练权重对比讨论
 
@@ -173,7 +180,6 @@ YOLOv5n: 1.76M参数 / 4.2GFLOPs
 1. 收敛速度更快，可显著减少训练时间；
 2. 检测性能提升，其对于数据量小及特征不明显的类别（如 crazing）
 3. 定位精确度提高，mAP50-95 指标可能有所提升。
-4. 
 
 ### 六：改进思路
 
