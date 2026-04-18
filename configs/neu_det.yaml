@@ -1,0 +1,13 @@
+train: D:\yolo_neu_det_project\datasets\neu_det_yolo\images\train
+val: D:\yolo_neu_det_project\datasets\neu_det_yolo\images\val
+test: D:\yolo_neu_det_project\datasets\neu_det_yolo\images\test
+
+nc: 6
+
+names:
+  0: crazing
+  1: inclusion
+  2: patches
+  3: pitted_surface
+  4: rolled-in_scale
+  5: scratches
