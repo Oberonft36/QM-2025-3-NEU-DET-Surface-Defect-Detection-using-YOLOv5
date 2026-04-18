@@ -110,8 +110,6 @@ names:
 
 ## 7. 训练过程问题与解决
 
-配图
-
 在训练过程中，Windows 环境下出现 DataLoader worker 异常退出问题：
 
 ```
